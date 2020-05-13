@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
+import { Link } from 'react-router-dom'
 import Head from './head'
 
 const Home = () => {
@@ -12,7 +13,7 @@ const Home = () => {
       <button type="button" onClick={() => setCounterNew(counter + 1)}>
         updateCounter
       </button>
-      <div> Hello World Dashboard {counter} </div>
+      <div> Hello World Dashboard {counter} </div> <Link to="/">Home</Link>
     </div>
   )
 }
